@@ -1,0 +1,8 @@
+inner_dir_1/tf_1.txt:- the second 2
+inner_dir_1/tf_2.txt:the sec 3
+inner_dir_1/tf_3.txt:the second 2
+inner_dir_1/tf_3.txt:the sec 2
+inner_dir_2/tf_1.txt:- the second 2
+inner_dir_2/tf_2.txt:the sec 3
+inner_dir_2/tf_3.txt:the second 2
+inner_dir_2/tf_3.txt:the sec 2
