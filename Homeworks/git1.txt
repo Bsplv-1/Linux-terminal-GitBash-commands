@@ -1,0 +1,124 @@
+HW_1. The first part
+Linux terminal (GitBash) commands
+ссылка на Гитхаб https://github.com/Bsplv-1/Linux-terminal-GitBash-commands
+Нужно уметь делать все пункты задания.
+Куда и в каком виде отправлять задание - скажу позже.
+
+1) Посмотреть где я
+pwd
+2) Создать папку
+mkdir C:\Users\Acer\Desktop\TEST\Terminal
+3) Зайти в папку
+cd Terminal
+4) Создать 3 папки
+mkdir Test1
+cd ..
+mkdir test2
+cd..
+mkdir test3
+cd..
+5) Зайти в любоую папку
+cd path
+6) Создать 5 файлов (3 txt, 2 json)
+touch file
+7) Создать 3 папки
+mkdir folder
+8) Вывести список содержимого папки
+ls или ls -la или ls -a
+ls -l отображает подробный список файлов в директории
+9) + Открыть любой txt файл
+open.
+10) + написать туда что-нибудь, любой текст.
+cat >> file или vim file
+написать текст
+11) + сохранить и выйти.
+:q
+12) Выйти из папки на уровень выше
+cd ..
+—
+13) переместить любые 2 файла, которые вы создали, в любую другую папку.
+mv file folder/file
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку.
+cp file folder/file
+15) Найти файл по имени
+find file
+find . -name '*g*'
+
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает.
+grep вырезает нужные вам строки из текстовых файлов которые содержат указаный пользователем текст.
+grep word directory/file or just file (if already in the directory)
+grep -r -w row_1 . (ищет строку по точному совпадению)
+grep -r -l row_1 . (показывает название папок и файлов содержащих строку)
+grep -r row_1 . > log_file.txt (создать файл содержащий информацию о найденных строках)
+grep 'Age - 19' names_file.txt > name_log_1.txt (выдаст строки в которых содержится Age - 19, создаст отдельный файл) 
+ 		
+17) вывести несколько первых строк из текстового файла
+head (can add-n20) file
+18) вывести несколько последних строк из текстового файла
+tail (can add-20) file
+tail -f tf_4.txt (изменение файла в реальном времени)
+tail -f tf_4.txt | grep 1 (показывает только строчки с "1")
+tail -f tf_4.txt | grep 1 * (показывает только строчки с "1" и знаками после)
+tail -f tf_4.txt | grep --line-buffered 1 >> tf_x.txt (сохранет строчки с 1 в новый файл)
+tail -f tf_4.txt | grep --line-buffered 1* >> tf_x.txt (сохранет строчки с 1 и знаками после в новый файл)
+tail -f tf_4.txt | grep --line-buffered 1 >> tf_x.txt | tail -f tf_x.txt (пишется в файл и в терминал)
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает.
+less file
+https://linux-faq.ru/page/komanda-less
+20) вывести дату и время
+date
+=========
+
+Задание * НЕ ЗНАЮ КАК СДЕЛАТЬ ЭТО 
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5005/terminal-hw-request
+scp сервер+ путь + файл файл куда перекинуть инфу с сервера или наоборот
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+
+=====================
+1) Посмотреть где я - pwd
+2) Создать папку - mkdir foldername
+3) Зайти в папку - cd foldername
+
+_________________________________________________________
+Добавить новый файл в Git hub 
+Bsplv@Bro MINGW64 ~/Documents/TEST/Terminal/Linux-terminal-GitBash-commands (main)
+$ cat >> new.txt
+11
+111
+22
+222
+33
+333
+
+Bsplv@Bro MINGW64 ~/Documents/TEST/Terminal/Linux-terminal-GitBash-commands (main)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+Bsplv@Bro MINGW64 ~/Documents/TEST/Terminal/Linux-terminal-GitBash-commands (main)
+$ git add .
+warning: in the working copy of 'new.txt', LF will be replaced by CRLF the next time Git touches it
+
+Bsplv@Bro MINGW64 ~/Documents/TEST/Terminal/Linux-terminal-GitBash-commands (main)
+$ git commit -m "add new"
+[main 81a3ec9] add new
+ 1 file changed, 5 insertions(+)
+ create mode 100644 new.txt
+
+Bsplv@Bro MINGW64 ~/Documents/TEST/Terminal/Linux-terminal-GitBash-commands (main)
+$ git push
+Enter passphrase for key '/c/Users/Bsplv/.ssh/id_rsa':
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 273 bytes | 273.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:Bsplv-1/Linux-terminal-GitBash-commands.git
+   ee93017..81a3ec9  main -> main
+
+Ctrl+L - очистить экран

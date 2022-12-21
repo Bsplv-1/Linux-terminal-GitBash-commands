@@ -1,0 +1,8 @@
+user_1: {"name":"vadim",
+	"surname":"ksendzov",
+	"age":31,
+	"gender":"male"},
+user_2 {"name":"maria",
+	"surname":"bespalova",
+	"age":87,
+	"gender":"female"}
