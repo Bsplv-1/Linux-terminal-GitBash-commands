@@ -42,7 +42,7 @@ XML
 touch new.xml
  24. Добавить файл под гит.
  25. Закоммитить файл.
-git add .<
+git add .
 git commit -a 
  26. Отправить файл на внешний GitHub репозиторий.
 git push
