@@ -127,3 +127,4 @@ To github.com:Bsplv-1/Linux-terminal-GitBash-commands.git
    ee93017..81a3ec9  main -> main
 
 Ctrl+L - очистить экран
+.
